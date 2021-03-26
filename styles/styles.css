@@ -1,0 +1,156 @@
+@font-face {
+  font-family: Raleway;
+  src: url("src/fonts");
+}
+
+/* 
+    Hero styles
+*/
+
+#hero {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(0deg, #777e91, #003de9);
+  color: #ffffff;
+  font-family: Raleway;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75%;
+  height: 100vh;
+  background: url("../src/images/hero-redhalf.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1700px) {
+  #hero::before {
+    width: 1300px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #hero::before {
+    background-size: 130% 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #hero::before {
+    background-size: 200% 100%;
+  }
+}
+
+#hero h1 {
+  text-transform: uppercase;
+  font-size: 96px;
+  letter-spacing: 6px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.center {
+  width: max-content;
+  margin: auto;
+}
+
+#hero h1 span {
+  color: #d90000;
+}
+
+#hero p {
+  font-size: 44px;
+  margin-bottom: 60px;
+}
+
+#hero .search-info {
+  position: absolute;
+  background-color: #d90000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: auto;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  border-radius: 6px;
+}
+
+#hero .search-info:hover {
+  background-color: #950303; /* Green */
+}
+
+#hero .crashed-car {
+  width: 90%;
+  height: auto;
+}
+
+@media screen and (max-width: 1650px) {
+  #hero h1 {
+    font-size: 80px;
+  }
+
+  #hero p {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  #hero h1 {
+    font-size: 64px;
+  }
+
+  #hero p {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #hero h1 {
+    font-size: 60px;
+  }
+
+  #hero p {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #hero h1 {
+    font-size: 40px;
+  }
+
+  #hero p {
+    font-size: 24px;
+  }
+
+  #hero .search-info {
+    font-size: 14px;
+    padding: 10px 28px;
+  }
+
+  #hero .crashed-car {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #hero h1 {
+    font-size: 8vw;
+  }
+
+  #hero p {
+    font-size: 5vw;
+  }
+
+  #hero .crashed-car {
+    margin-top: 80px;
+  }
+}
